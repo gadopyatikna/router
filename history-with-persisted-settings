@@ -1,0 +1,21 @@
+    1  vcgencmd get_throttled
+    2  vcgencmd -n1 get_throttled
+    3  watch -n1 vcgencmd  get_throttled
+    4  sudo apt update
+    5  sudo reboot
+    6  sudo apt install iptables-persistent
+    7  sudo vim /etc/dhcpd/conf
+    8  sudo vim /etc/dhcpd.conf
+    9  sudo vim /etc/dhcpcd.conf
+   10  sudo systemctl restart dhcpcd
+   11  sudo systemctl restart dhcpcd5
+   12  systemctl | grep dhcp
+   13  systemctl list-units --type=service | grep dhcp
+   14  networkctl status
+   15  systemctl status systemd-neworkd
+   16  cat /etc/network/interfaces
+   17  systemctl status NetworkManager
+   18  nmcli device
+   19  nmcli connection show
+   20  sudo vim /etc/sysctl.conf
+   21  history > history-with-persisted-settings

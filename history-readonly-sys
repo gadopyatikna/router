@@ -1,0 +1,357 @@
+    1  vcgencmd get_throttled
+    2  vcgencmd -n1 get_throttled
+    3  watch -n1 vcgencmd  get_throttled
+    4  sudo apt update
+    5  sudo reboot
+    6  ls -l
+    7  sudo tailscale up
+    8  sudo sysctl -w net.ipv4.ip_forward=1
+    9  iptables -t nat -A POSTROUTING -o tailscale0 -j MASQUERADE
+   10  sudo iptables -t nat -A POSTROUTING -o tailscale0 -j MASQUERADE
+   11  sudo iptables -t nat -L -n -v
+   12  sudo iptables -t nat -D POSTROUTING -o tailscale0 -j MASQUERADE
+   13  ip addr
+   14  hostname -I
+   15  systemctl get-default
+   16  sudo apt install iptables-persistent
+   17  sudo vim /etc/dhcpd/conf
+   18  sudo vim /etc/dhcpd.conf
+   19  sudo vim /etc/dhcpcd.conf
+   20  sudo systemctl restart dhcpcd
+   21  sudo systemctl restart dhcpcd5
+   22  systemctl | grep dhcp
+   23  systemctl list-units --type=service | grep dhcp
+   24  networkctl status
+   25  systemctl status systemd-neworkd
+   26  cat /etc/network/interfaces
+   27  systemctl status NetworkManager
+   28  nmcli device
+   29  nmcli connection show
+   30  sudo vim /etc/sysctl.conf
+   31  history > history-with-persisted-settings
+   32  history | grep tailscale
+   33  ping google.com
+   34  ip addr
+   35  hostname -I
+   36  ip addr
+   37  hostname -I
+   38  ip route
+   39  sudo tcpdump -i et0
+   40  sudo apt install tcpdump
+   41  sudo tcpdump -i et0
+   42  sudo tcpdump -i eth0
+   43  ip addr
+   44  sudo ip addr add 192.168.50.1 dev eth0
+   45  sudo ip link set eth0 up
+   46  sudo sysctl -w net.ipv4.ip_forward=1
+   47  ip route
+   48  sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+   49  sudo iptables -t nat -D POSTROUTING -o wlan0 -j MASQUERADE
+   50  sudo ip addr del 192.168.50.1/24 dev eth0
+   51  ip addr show eth0
+   52  ip addr 
+   53  sudo apt install dnsmasq
+   54  sudo apt install vim
+   55  vim /et/dnsmasq.conf
+   56  vim /etc/dnsmasq.conf
+   57  sudo vim /etc/dnsmasq.conf
+   58  sudo ip addr add 192.168.50.1/24 dev eth0
+   59  sudo sysctl -w net.ipv4.ip_forward=1
+   60  sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+   61  sudo systemstvl restart dnsmasq
+   62  sudo systemctl restart dnsmasq
+   63  sudo tcpdump -i eth0
+   64  tailscale status
+   65  sudo tailscale down
+   66  sudo tailscale status
+   67  sudo tailscale up --exit-node=100.84.109.9
+   68  sudo tailscale status
+   69  sudo tailscale down
+   70  sudo tailscale up --exit-node=100.84.109.9
+   71  iptable
+   72  iptables
+   73  iptables -h
+   74  sudo iptabled -L -n -v
+   75  sudo iptables -L -n -v
+   76  sudo iptables -t nat -A POSTROUTING -o tailscale0 -j MASQUERADE
+   77  sudo iptables -L -n -v
+   78  cat /etc/dnsmasq.conf
+   79  sudo tailscale down
+   80  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access
+   81  ip route
+   82  tailsacle status
+   83  tailscale status
+   84  ip route show table 52
+   85  tailscale debug prefs
+   86  sudo tailscale down
+   87  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+   88  ip route show table 52
+   89  tailscale debug prefs
+   90  ip route
+   91  tailscale debug prefs
+   92  ip rule
+   93  ip route how table 52
+   94  ip route show table 52
+   95  touch terminal-history
+   96  history > terminal-history 
+   97  tail -n 10 terminal-history 
+   98  sudo iptables-save > iptables_rules
+   99  cat iptables_rules 
+  100  tailscale down
+  101  sudo tailscale down
+  102  sudo iptables-save > iptables_rules-tailscale_down
+  103  cat iptables_rules-tailscale_down 
+  104  history | grep tailscale 
+  105  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access
+  106  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  107  echo "tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes" > tailscale-up.sh
+  108  ls -l
+  109  sudo reboot
+  110  ls l
+  111  ls -l
+  112  ip addr
+  113  hostname -I
+  114  iptables
+  115  iptables-save
+  116  sudo iptables-save
+  117  cat tailscale-up.sh 
+  118  tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  119  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  120  ip a
+  121  ip route
+  122  ping 8.8.8.8
+  123  istory | grep dhcp
+  124  history | grep dhcp
+  125  sudo vim /etc/dnsmasq.conf
+  126  ip a
+  127  sudo sysctl -w net.ipv4.ip_forward=1
+  128  sudo iptables -t nat -L
+  129  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  130  sudo iptables -t nat -L
+  131  systemctl status dnsmasq
+  132  sudo ip addr add 192.168.50.1/42 dev eth0
+  133  sudo ip addr add 192.168.50.1/24 dev eth0
+  134  systemctl status dnsmasq
+  135  ip a
+  136  ip route
+  137  sudo tailscale down
+  138  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  139  ip route
+  140  sudo ip link set eth0 up
+  141  ip route
+  142  ip a
+  143  sudo tailscale down
+  144  clear
+  145  sudo iptables -t nat -L
+  146  cat /proc/sys/net/ipv4/ip_forward
+  147  sudo systemctl restart dnsmasq
+  148  sudo iptables -t -n -L
+  149  ping 8.8.8.8
+  150  sudo vim /etc/dnsmasq.conf
+  151  sudo systemctl restart dnsmasq                                          
+  152  ip a 
+  153  sudo iptables -t nat -L 
+  154  sudo iptables -t -L -v 
+  155  cat iptables_rules
+  156  sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE 
+  157  sudo iptables -t nat -L 
+  158  sudo iptables -t -L -v 
+  159  sudo iptables-restore iptables_rules
+  160  sudo iptables-save
+  161  sudo iptables-restore iptables_rules-tailscale_down 
+  162  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  163  sudo tailscale down
+  164  sudo iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT
+  165  sudo iptables -A FORWARD -i wlan0 -o eth0 -m state  RELATED,ESTABLISHED -j ACCPET
+  166  sudo iptables -A FORWARD -i wlan0 -o eth0 -m state  RELATED,ESTABLISHED -j ACCEPT
+  167  sudo iptables-restore iptables_rules-tailscale_down 
+  168  sudo vim /etc/dnsmasq.conf
+  169  sudo systemctl restart dnsmasq
+  170  sudo vim /etc/dnsmasq.conf
+  171  sudo systemctl restart dnsmasq
+  172  sudo vim /etc/dnsmasq.conf
+  173  sudo systemctl restart dnsmasq
+  174  sudo systemctl  dnsmasq status
+  175  sudo systemctl  status dnsmasq
+  176  ip addr show eth0
+  177  ip addr 
+  178  history | grep 192
+  179  sudo ip addr add 192.168.50.1/24 dev eth0
+  180  sudo systemctl restart dnsmasq
+  181  ip addr 
+  182  sudo iptables-restore iptables_rules-tailscale_down 
+  183  ip addr 
+  184  cat tailscale-up.sh 
+  185  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  186  sudo tailscale down
+  187  sudo nmcli connection modify "Wired connection 1" ipv4.addresses 192.168.50.1/24 ipv4.method manual
+  188  sudo nmcli connection up "Wired connection 1"
+  189  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  190  sudo tailscale down
+  191  sudo iptables -t nat -L
+  192  sudo reboot
+  193  sudo tcpdump -i eth0
+  194  sudo systemtl restart dnsmasq
+  195  sudo systemctl restart dnsmasq
+  196  sudo tcpdump -i eth0
+  197  sudo ss -lunp | grep :67
+  198  sudo tcpdump -i eth0
+  199  ip a
+  200  systemctl status dnsmasq
+  201  sudo iptables -t nat -L
+  202  ping 8.8.8.8
+  203  iptables-restore iptables_rules-tailscale_down 
+  204  sudo iptables-restore iptables_rules-tailscale_down 
+  205  sudo iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT
+  206  cat tailscale-up.sh 
+  207  sudo tailscale up --exit-node=100.84.109.9 --exit-node-allow-lan-access --accept-routes
+  208  sudo tailscale down
+  209  ip a
+  210  cat /proc/sys/net/ipv4/ip_forward
+  211  sudo sysctl -w net.ipv4.ip_forward=1
+  212  echo "sudo sysctl -w net.ipv4.ip_forward=1" > persist-pck-forwarding
+  213  sudo vim /etc/sysctl.conf
+  214  sudo sysstl -p
+  215  sudo sysctl -p
+  216  sudo reboot
+  217  ip a
+  218  car
+  219  cat /proc/sys/net/ipv4/ip_forward
+  220  sudo sysctl -s
+  221  sudo sysctl --system
+  222  sudo poweroff
+  223  ping google.com
+  224  ip route
+  225  ip a
+  226  ls -l
+  227  sudo sysctl -w net.ipv4.ip_forward=1
+  228  ip a
+  229  istory | grep dhcp
+  230  istory | grep 19
+  231  history | grep 19
+  232  sudo ip addr add 192.168.50.1/24 dev 
+  233  history | nmcli
+  234  history | grep nmcli
+  235  nmcli connection show
+  236  nmcli connection show "Wired connection 1"
+  237  history | grep nmcli
+  238  sudo nmcli connection up "Wired connection 1"
+  239  touc nmcli-setup.s
+  240  touch nmcli-setup.s
+  241  vim nmcli-setup.s 
+  242  ping google.com
+  243  istory | grep dnsmasq
+  244  history | grep dnsmasq
+  245  systemctl status dnsmasq
+  246  sudo systemctl restart dnsmasq
+  247  systemctl status dnsmasq
+  248  ip a
+  249  sudo sysctl -w net.ipv4.ip_forward=1
+  250  ping 8.8.8.8
+  251  ls -l
+  252  sudo chmod 775 tailscale-up.sh 
+  253  ./tailscale-up.sh 
+  254  sudo ./tailscale-up.sh 
+  255  touch thermal-stats.sh
+  256  vim thermal-stats.sh 
+  257  sudo chmod 775 thermal-stats.sh 
+  258  ./thermal-stats.sh 
+  259  ls -l
+  260  mv nmcli-setup.s nmcli-setup.sh
+  261  ls -l
+  262  chmod 775 nmcli-setup.sh 
+  263  cat nmcli-setup.sh 
+  264  vim nmcli-setup.sh 
+  265  touch up.sh
+  266  vim up.sh 
+  267  cat nmcli-setup.sh 
+  268  vim up.sh 
+  269  ls -l
+  270  sudo chmod 775 up.sh 
+  271  mkdir setup-router
+  272  mv iptables_rules setup-router/
+  273  ls setup-router/
+  274  mv iptables_rules-tailscale_down setup-router/
+  275  mv tailscale-up.sh setup-router/
+  276  mv thermal-stats.sh setup-router/
+  277  ld -l
+  278  ls -l
+  279  mv nmcli-setup.sh setup-router/
+  280  top
+  281  htop
+  282  ./setup-router/thermal-stats.sh 
+  283  sudo poweroff
+  284  istory | grep tcpdump
+  285  history | grep tcpdump
+  286  sudo tcpdump -i eth0
+  287  ls -l
+  288  cat up.sh 
+  289  ping google.com
+  290  ping 8.8.8.8
+  291  sudo systemctl status tailscale
+  292  sudo systemctl status tailscaled
+  293  ping 8.8.8.8
+  294  cat up.sh 
+  295  sysctl ipv4.ip_forward
+  296  sudo sysctl net.ipv4.ip_forward
+  297  cat /etc/sysctl.conf 
+  298  sudo touch /etc/sysctl.d/99-ipforward.conf
+  299  sudo vim /etc/sysctl.d/99-ipforward.conf
+  300  sud syctl -p
+  301  sud sysctl -p
+  302  sudo sysctl -p
+  303  cat up.sh 
+  304  nmcli connection show
+  305  nmcli connection show "Wired connection 1" 
+  306  nmcli connection show "Wired connection 1"  | grep auto
+  307  nmcli connection show "Wired connection 1"  | grep interface-name
+  308  ls /etc/NetworkManager/system-connections/
+  309  ls -l
+  310  ./setup-router/thermal-stats.sh 
+  311  cat up.sh 
+  312  sudo systemctl restart dnsmasq
+  313  ip a
+  314  history | grep ipv4
+  315  vim up.sh 
+  316  history | /etc/
+  317  history | grep /etc/
+  318  vim up.sh 
+  319  ./setup-router/thermal-stats.sh 
+  320  sudo reboot
+  321  ls -l
+  322  ls -l setup-router/
+  323  cat setup-router/nmcli-setup.sh 
+  324  history | grep dnsm
+  325  cat /etc/dnsmasq.conf 
+  326  cat setup-router/nmcli-setup.sh 
+  327  sudo vim /etc/systemd/journald.conf 
+  328  free -h
+  329  sudo swapoff -a
+  330  sudo systemctl disable dpys-swapfile
+  331  free -h
+  332  top
+  333  ./setup-router/thermal-stats.sh 
+  334  cat /proc/mounts
+  335  cat /proc/mounts | grep mmc
+  336  cat /etc/fstab 
+  337  ls -l /var/log
+  338  ls -l /var/tmp
+  339  cat /var/tmp/systemd-private-a709fc69dccf470b9303b4b331767353-systemd-logind.service-BO6iUA/
+  340  sudo cat /var/tmp/systemd-private-a709fc69dccf470b9303b4b331767353-systemd-logind.service-BO6iUA/
+  341  sudo ls- l /var/tmp/systemd-private-a709fc69dccf470b9303b4b331767353-systemd-logind.service-BO6iUA/
+  342  sudo ls -l /var/tmp/systemd-private-a709fc69dccf470b9303b4b331767353-systemd-logind.service-BO6iUA/
+  343  sudo ls -l /var/tmp/systemd-private-a709fc69dccf470b9303b4b331767353-systemd-logind.service-BO6iUA/tmp/
+  344  vim /etc/fstab 
+  345  cat /proc/mounts | grep mmc
+  346  mount | grep mmc
+  347  vim /proc/mounts 
+  348  vim /etc/fstab 
+  349  mount | grep tmpfs
+  350  vim /etc/fstab 
+  351  sudo vim /etc/fstab 
+  352  sudo mount -a
+  353  systemctl daemon-reload
+  354  mount | grep var
+  355  mount | grep tmpfs
+  356  sudo reboot
+  357  history > history-readonly-sys
