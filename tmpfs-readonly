@@ -13,3 +13,8 @@ sudo rm -rf /var/cache/*
 sudo mount -a
 
 mount | grep tmpfs
+
+sudo nano /etc/systemd/journald.conf
+Storage=volatile
+RuntimeMaxUse=30M
+sudo systemctl restart systemd-journald
